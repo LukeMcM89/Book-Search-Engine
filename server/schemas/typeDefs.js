@@ -29,8 +29,9 @@ type Query {
 
 type mutation {
     login(email: String!, password: String!): Auth
-    newUser(username: String!, email: Sgring! password: Sttring!): Auth
-    storeBook(bookID: String!, title: String! authors: String! description: String! image: String! link: String!)
-    deleteBook(bookId: String!)
+    newUser(username: String!, email: String!, password: String!): Auth
+    storeBook(bookID: String!, title: String!, authors: String!, description: String!, image: String!, link: String!):User
+    deleteBook(bookId: String!):User
 }
-
+`
+module.exports = typeDefs;
